@@ -1,0 +1,15 @@
+#rate{
+    height: 30px;
+    width: 200px;
+    border: 1px solid black;
+}
+.total{
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+    border: 1px solid black;
+}
+#myDIV{
+    width: 1000px;
+    
+}

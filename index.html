@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>price calculation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Price calculation</h1>
+      <div class="row">
+        <div class="col-3"> <input type="number" onkeyup="addRow();" id="addrow"></div><br>
+        <div class="col-9" id="myDIV">
+
+        </div><br>
+
+
+      </div>
+
+
+      <div id="ROW">
+        <div class="row">
+          <div class="col-3">Product</div>
+          <div class="col-3">Quantity </div>
+          <div class="col-3">Rate </div>
+          <div class="col-3">Total </div>
+        </div>
+        <div class="row" id="newRow">
+          <div class="col-3"> <select id="phones" onchange="getValueFirstRow()">
+              <option value="15000">realme </option>
+              <option value="17000">oppo</option>
+              <option value="10000">infinix</option>
+              <option value="20000">samsung</option>
+            </select></div>
+          <div class="col-3"> <input type="number"
+              onkeyup="calculateFirstRow();" id="firstquantity" /></div>
+          <div class="col-3"><div id="FirstProductrate"></div> </div>
+          <div class="col-3"><div id="FirstProducttotal" class="amount"
+              onkeyup="add();"></div> </div>
+
+        </div>
+        <br>
+        
+      </div>
+      <!--
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-3">  <select id="chips" onchange="getValueSecondRow()">
+              <option  value="100">sun Chips </option>
+              <option  value="700">Poppers Chips</option>
+              <option  value="150">Carl Chips</option>
+              <option  value="500">Mr Twice</option>
+            </select></div>
+          <div class="col-3"> <input type="number" onkeyup="calculateSecondRow();" id="secondquantity"/></div>
+          <div class="col-3"><div  id="SecondProductrate"></div> </div>
+          <div class="col-3"><div  id="SecondProducttotal" class="amount" onkeyup="add();"></div> </div>
+
+      </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-3">  <select id="coldrinks" onchange="getValueThirdRow()">
+              <option  value="5000">cocacola </option>
+              <option  value="7000">pepsi</option>
+              <option  value="1000">sprite</option>
+              <option  value="2000">7up</option>
+            </select></div>
+          <div class="col-3"> <input type="number" onkeyup="calculateThirdRow();" id="thirdquantity"/></div>
+          <div class="col-3"><div  id="ThirdProductrate"></div> </div>
+          <div class="col-3"><div  id="ThirdProducttotal" class="amount"  onkeyup="add();"></div> </div>
+
+      </div>
+       -->
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+      
+          <div class="col-3">All Product Total Price = </div>
+          <div class="col-3">
+            <div id="allresult">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+          
+      </div>
+
+
+      <script src="index.js"></script>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    </body>
+  </html>
